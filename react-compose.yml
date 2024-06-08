@@ -1,0 +1,10 @@
+version: '3'
+services:
+  reactjs_svc:
+    container_name: react-cont
+    build:
+      context: .
+      dockerfile: react-dockerfile
+    restart: always
+    ports:
+      - 8085:80
